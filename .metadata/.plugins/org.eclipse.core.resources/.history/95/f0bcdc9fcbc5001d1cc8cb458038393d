@@ -1,0 +1,17 @@
+#configure Database here
+#need the following things to communicate with the DB
+#jdbc driver (not required anymore as application.properties automatically detects it
+#jdbc url
+#username
+#password
+
+spring.datasource.url=jdbc:mysql://localhost:3306/myhibernatetable?useSSL=false
+spring.datasource.username=root
+spring.datasource.password=Safari16@ksz
+
+# Hibernate Properties
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+
+# This property will automatically create the SQL Query
+spring.jpa.hibernate.ddl-auto=update
